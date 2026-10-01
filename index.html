@@ -1,1 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ema Margita Gnidova | Digital Business Card</title>
 
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #2563eb;
+            --primary-hover: #1d4ed8;
+            --text: #1f2937;
+            --muted: #6b7280;
+            --background: #f5f7fb;
+            --card: #ffffff;
+            --shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            --radius: 24px;
+        }
+
+        body {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f8fafc 0%, #eef4ff 100%);
+            color: var(--text);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 32px 16px;
+            line-height: 1.7;
+        }
+
+        .card {
+            background: var(--card);
+            max-width: 900px;
+            width: 100%;
+            border-radius: var(--radius);
+            padding: 48px;
+            box-shadow: var(--shadow);
+            text-align: center;
+        }
+
+        .profile-photo {
+            width: 170px;
+            height: 170px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 5px solid #ffffff;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+            margin-bottom: 24px;
+        }
+
+        h1 {
+            font-size: 2.4rem;
+            margin-bottom: 10px;
+            color: var(--text);
+        }
+
+        .headline {
+            color: var(--primary);
+            font-size: 1.15rem;
+            font-weight: 600;
+            margin-bottom: 32px;
+        }
+
+        .section {
+            margin-top: 30px;
+        }
+
+        .section h2 {
+            font-size: 1.3rem;
+            margin-bottom: 14px;
+            color: var(--text);
+        }
+
+        .about {
+            color: var(--muted);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .quote {
+            margin-top: 24px;
+            padding: 20px;
+            border-radius: 16px;
+            background: #f8fafc;
+            color: var(--primary);
+            font-style: italic;
+            font-weight: 600;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 14px;
+            margin-top: 36px;
+        }
+
+        .btn {
+            text-decoration: none;
+            padding: 14px 22px;
+            border-radius: 999px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary {
+            background: var(--primary);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: var(--primary-hover);
+            transform: translateY(-2px);
+        }
+
+        .btn-outline {
+            border: 2px solid var(--primary);
+            color: var(--primary);
+            background: white;
+        }
+
+        .btn-outline:hover {
+            background: var(--primary);
+            color: white;
+        }
+
+        .contact {
+            margin-top: 28px;
+            color: var(--muted);
+        }
+
+        .contact a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        footer {
+            margin-top: 40px;
+            padding-top: 24px;
+            border-top: 1px solid #e5e7eb;
+            color: var(--muted);
+            font-size: 0.95rem;
+        }
+
+        @media (max-width: 768px) {
+            .card {
+                padding: 32px 24px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .headline {
+                font-size: 1rem;
+            }
+
+            .profile-photo {
+                width: 140px;
+                height: 140px;
+            }
+
+            .buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .btn {
+                width: 100%;
+                max-width: 280px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main class="card">
+
+        <img src="profile.jpg" alt="Ema Margita Gnidova" class="profile-photo">
+
+        <h1>Ema Margita Gnidova</h1>
+
+        <p class="headline">
+            Finance Student | Undergraduate Intern | Aspiring Financial Professional
+        </p>
+
+        <section class="section">
+            <h2>About Me</h2>
+            <p class="about">
+                I am a finance student at the University of Economics in Bratislava.
+                In my free time, I enjoy writing fiction, dancing, reading, and
+                self-studying various subjects such as investing, personal finance,
+                creating content in Canva, and improving my Excel skills.
+            </p>
+        </section>
+
+        <div class="quote">
+            “Inspiring growth, creating impact, living fully.”
+        </div>
+
+        <div class="buttons">
+            https://www.linkedin.com/
+                LinkedIn
+            </a>
+
+            <a href="YOUR_GITHUB_RL
+                GitHub
+            </a>
+
+            <a href="mailto:ema.gnidova@gmail.com" class="btn btn-primary">
+                Contact Me
+            </a>
+        </div>
+
+        <div class="contact">
+            Email:
+            <a href="mailto:ema.gnidova@gmail.com">ema.gnidova@gmail.com</a>
+        </div>
+
+        <footer>
+            Built with AI • Deployed with GitHub Pages
+        </footer>
+
+    </main>
+</body>
+</html>
